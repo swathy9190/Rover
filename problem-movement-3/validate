@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Please, enter your final result. Format: 123,456"
+read finalResult
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    referenceResult=`base64 -D -i ./result.b64`
+else
+    referenceResult=`base64 -d ./result.b64`
+fi
+
+if [ "$finalResult" = "$referenceResult" ]; then
+    echo "Correct!"
+else
+    echo "Incorrect!"
+fi
+
