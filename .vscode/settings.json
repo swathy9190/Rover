@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "problem-movement/com/src",
+        "problem-movement/src/main/java/com/example"
+    ]
+}
