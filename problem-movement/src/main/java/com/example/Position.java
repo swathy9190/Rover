@@ -1,4 +1,3 @@
-import com.example;
 public class Position
 {
     int x, y;
